@@ -1,0 +1,28 @@
+body {
+    background-color: #CFDEF8;
+}
+header {
+    font-family: baskerville, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.sandwichpicker {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #687A97;
+    font-weight: italic;
+    font-size: 20px;
+}
+#sandwiches {
+    background-color: #687A97;
+    color: white;
+    border-color: white;
+}

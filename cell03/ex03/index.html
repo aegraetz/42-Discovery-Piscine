@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="todo.js"></script>
+    <title>ToDoOrNotToDO</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #08632e;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+    .newItem {
+        width: 700px;
+        height: 50px;
+        border-radius: 5px;
+        background: #77d19c;
+        color: white;
+        font-size: 25px;
+        margin: 10px; 
+    }
+    button {
+       width: 700px;
+       height: 50px;
+       border-radius: 10px;
+       border: none;
+       color: white;
+       font-size: 30px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-weight: bold;
+       background-color: #26864e;
+       box-shadow: 5px 5px 20px #080808; 
+    }
+    #button:hover {
+        background-color: #044b36;
+        }
+
+    #button:active {
+     background-color: #023d2b;
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+    }
+    </style>
+<body>
+    <div>
+        <h1>TO DO:</h1>
+        <button type="button" id="button" onclick="promptNew()">NEW</button>
+        <p id="item"></p>
+        <div id="ft_list">
+        </div>
+    </div>
+</body>
+</html>

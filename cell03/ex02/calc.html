@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .calculate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #c5a3f1;
+        width: 700px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgb(75, 74, 74);
+    }
+    .first, .second, .third {
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column; 
+        font-family: helvetica, sans-serif;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    label {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    input, select {
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 10px #664a8a;
+    }
+    #operator {
+        font-size: 20px;
+    }
+    button {
+       width: 700px;
+       height: 50px;
+       border-radius: 20px;
+       border: none;
+       color: white;
+       font-size: 20px;
+       background-color: grey;
+       box-shadow: 5px 5px 20px rgb(8, 8, 8); 
+    }
+    #button:hover {
+        background-color: rgb(75, 74, 74)
+        }
+
+    #button:active {
+     background-color: rgb(68, 60, 71);
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+}
+</style>
+<body>
+    <div class="calculate">
+        <div class="first">
+            <label for="firstnumber">Enter first digit: </label>
+            <input type="text" id="firstnumber" min="0" placeholder="0 1 2 3 4 5 6 ... ">
+        </div>
+        <div class="second">
+            <label id="operator" style="font-size: 16px">Choose operator: </label>
+            <select id="function" style="height: 53px">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+                <option>%</option>
+                </select>
+        </div>
+        <div class="third">
+                <label for="secondnumber">Enter second digit: </label>
+                <input type="text" id="secondnumber" min="0" placeholder="0 1 2 3 4 5 6 ... ">
+        </div>
+    </div>
+    <br>
+    <button type="button" id="button" onclick="domaths()">Try me!</button>
+</body>
+<script type="text/javascript">
+    setTimeout(doThings, 30000);
+    function doThings() {
+        alert("Please use me...");
+    }
+    function domaths() {
+        var first = Number(document.getElementById("firstnumber").value);
+        var select = document.getElementById("function");
+        var text = select.options[select.selectedIndex].text;
+        var second = Number(document.getElementById("secondnumber").value);
+        if ((text == '/' && second == 0) || (text == '%' && second == 0))
+        {
+            console.log ("over 9000");
+            alert("it's over 9000!");
+        }
+        else {
+            if (first < 0 || second < 0 || !Number.isInteger(first) || !Number.isInteger(second))
+            {
+                alert("Error");
+            }
+            else {
+                var mathematics = (first + " " + text + " " + second);
+                console.log(mathematics);
+                var result = eval(mathematics);
+                console.log(result);
+                alert(result);
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Cardo;
+    src: url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+}
+body {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+h1 {
+    padding-top: 50px;
+    font-family: Cardo;
+    font-size: 100px;
+    background: -webkit-radial-gradient(rgb(179, 151, 231), rgb(37, 3, 101));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+p {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.space {
+    height: 10px;
+}
+.profile {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.jelly {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+    background: white;
+    color: #6B38AD;
+    box-shadow: 0 0 80px 10px #6B38AD;
+}
+table {
+    width: 200px; 
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+button {
+    background-color:#6B38AD;
+    color: white;
+    font-family: Cardo;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color:rgb(36, 7, 73);
+}
+.button:active {
+    background-color:rgb(36, 7, 73);
+    transform: translateY(4px);
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

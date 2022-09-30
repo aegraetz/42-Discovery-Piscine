@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Playfair_Display;
+    src: url("PlayfairDisplay-VariableFont_wght.ttf");
+}
+.background {
+    background-image: url("sky.jpg");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+h1 {
+    color: white;
+    font-family: Playfair_Display;
+    text-align: center;
+}
+.block {
+    height: 400px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+p {
+    color: grey;
+    font-size: 22px;
+    font-family: Playfair_Display;
+}
+.starimage {
+    background-image: url("stars.jpg");
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
